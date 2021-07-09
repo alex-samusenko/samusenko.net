@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "samusenko.net",
+    title: "самусенко нет",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -11,14 +11,13 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
     },
+
   ],
 };
